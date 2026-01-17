@@ -1,0 +1,120 @@
+.section {
+    padding: 8rem 0;
+    background: var(--color-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 5rem;
+    max-width: 800px;
+}
+
+.label {
+    color: var(--color-primary);
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+    margin-bottom: 2rem;
+}
+
+.outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Marquee Styles */
+.marquees {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.marqueeTrack {
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+}
+
+.skillChip {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    white-space: nowrap;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skillChip:hover {
+    background: rgba(138, 154, 91, 0.15);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 15px rgba(138, 154, 91, 0.3);
+    transform: scale(1.05);
+}
+
+.icon {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .marquees {
+        gap: 2rem;
+    }
+
+    .skillChip {
+        padding: 0.8rem 1.5rem;
+    }
+}
