@@ -73,21 +73,23 @@ const DetailsPage = () => {
                             </div>
                         </div>
 
-                        <div className={styles.sideGroup}>
-                            <h3>Links</h3>
-                            <div className={styles.actionButtons}>
-                                {item.links.play && (
-                                    <a href={item.links.play} target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
-                                        <Play size={18} /> Play Game
-                                    </a>
-                                )}
-                                {item.links.code && (
-                                    <a href={item.links.code} target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
-                                        <Github size={18} /> View Source
-                                    </a>
-                                )}
+                        {(item.links?.play || item.links?.code) && (
+                            <div className={styles.sideGroup}>
+                                <h3>Links</h3>
+                                <div className={styles.actionButtons}>
+                                    {item.links.play && (
+                                        <a href={item.links.play} target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
+                                            <Play size={18} /> Play Game
+                                        </a>
+                                    )}
+                                    {item.links.code && (
+                                        <a href={item.links.code} target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
+                                            <Github size={18} /> View Source
+                                        </a>
+                                    )}
+                                </div>
                             </div>
-                        </div>
+                        )}
                     </aside>
                 </div>
 

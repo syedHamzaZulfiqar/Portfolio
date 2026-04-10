@@ -11,7 +11,7 @@ const Navbar = () => {
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
         { name: 'Contact', href: '#contact' },
-        { name: 'Resume', href: '/resume.pdf' }
+        { name: 'Resume', href: '/portfolio media/GameDevCV.pdf', external: true }
     ];
 
     const menuVariants = {
@@ -55,7 +55,12 @@ const Navbar = () => {
 
                 <div className={styles.desktopNav}>
                     {links.map((link) => (
-                        <a key={link.name} href={link.href} className={styles.navLink}>
+                        <a 
+                            key={link.name} 
+                            href={link.href} 
+                            className={styles.navLink}
+                            {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                        >
                             {link.name}
                         </a>
                     ))}
@@ -87,6 +92,7 @@ const Navbar = () => {
                                         custom={i}
                                         variants={linkVariants}
                                         onClick={() => setIsOpen(false)}
+                                        {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                                     >
                                         {link.name}
                                         <ArrowUpRight size={24} className={styles.linkArrow} />
