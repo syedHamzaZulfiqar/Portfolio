@@ -11,7 +11,7 @@ const Navbar = () => {
         { name: 'Skills', href: '#skills' },
         { name: 'Projects', href: '#projects' },
         { name: 'Contact', href: '#contact' },
-        { name: 'Resume', href: '/portfolio media/GameDevCV.pdf', external: true }
+        { name: 'Resume', href: '/portfolio-media/GameDevCV.pdf', external: true }
     ];
 
     const menuVariants = {
