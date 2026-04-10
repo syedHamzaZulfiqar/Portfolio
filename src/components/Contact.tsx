@@ -44,7 +44,7 @@ const Contact = () => {
                 <motion.div style={{ y }} className={styles.content}>
                     <div className={styles.ctaWrapper}>
                         <Magnetic>
-                            <a href="mailto:contact@example.com" className={styles.emailBtn}>
+                            <a href="mailto:syedhamzazulfiqarbu@gmail.com" className={styles.emailBtn}>
                                 <span className={styles.btnText}>Get in touch</span>
                                 <Mail className={styles.btnIcon} size={28} />
                             </a>
@@ -54,24 +54,24 @@ const Contact = () => {
                     <div className={styles.footerInfo}>
                         <div className={styles.infoGroup}>
                             <span className={styles.label}>CONTACT DETAILS</span>
-                            <a href="mailto:syedhamza@example.com" className={styles.link}>syedhamza@example.com</a>
-                            <span className={styles.subText}>+123 456 7890</span>
+                            <a href="mailto:syedhamzazulfiqarbu@gmail.com" className={styles.link}>syedhamzazulfiqarbu@gmail.com</a>
+                            <span className={styles.subText}>Lahore, Pakistan</span>
                         </div>
 
                         <div className={styles.infoGroup}>
                             <span className={styles.label}>SOCIALS</span>
                             <div className={styles.socialLinks}>
-                                <a href="#" className={styles.socialLink}>LinkedIn <ArrowUpRight size={14} /></a>
-                                <a href="#" className={styles.socialLink}>GitHub <ArrowUpRight size={14} /></a>
-                                <a href="#" className={styles.socialLink}>Twitter <ArrowUpRight size={14} /></a>
+                                <a href="https://linkedin.com" target="_blank" className={styles.socialLink}>LinkedIn <ArrowUpRight size={14} /></a>
+                                <a href="https://play.unity.com" target="_blank" className={styles.socialLink}>Unity Play <ArrowUpRight size={14} /></a>
+                                <a href="https://github.com" target="_blank" className={styles.socialLink}>GitHub <ArrowUpRight size={14} /></a>
                             </div>
                         </div>
                     </div>
                 </motion.div>
 
                 <div className={styles.copyright}>
-                    <span>&copy; {new Date().getFullYear()} Zulfi Dev. All rights reserved.</span>
-                    <span className={styles.location}>Based in Digital Space</span>
+                    <span>&copy; {new Date().getFullYear()} Syed Hamza Zulfiqar. All rights reserved.</span>
+                    <span className={styles.location}>Based in Lahore, Pakistan</span>
                 </div>
             </div>
         </section>

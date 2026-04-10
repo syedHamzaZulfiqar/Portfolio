@@ -57,8 +57,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.8 }}
                     >
-                        A software engineer & game developer creating high-fidelity digital experiences.
-                        Blending graphics programming with refined aesthetics.
+                        Hamza is a 3D Game Developer and Computer Science student dedicated to bringing interactive concepts to life. With professional experience in Unity and C#, he specializes in crafting engaging gameplay loops, from hyper-casual prototypes to advanced NavMesh AI and physics based systems. A certified developer and technical problem-solver, Hamza blends precision coding with creative game design to turn ambitious ideas into seamless reality.
                     </motion.p>
 
                     <motion.div

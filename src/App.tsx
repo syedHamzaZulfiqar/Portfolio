@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Cursor from './components/ui/Cursor';
 import MeshGradient from './components/ui/MeshGradient';
+import Home from './pages/Home';
+import DetailsPage from './pages/DetailsPage';
 
 function App() {
   useEffect(() => {
@@ -32,18 +31,19 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <MeshGradient />
-      <Cursor />
-      <Navbar />
-      <main>
-        <Hero />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <MeshGradient />
+        <Cursor />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<DetailsPage />} />
+          <Route path="/experience/:id" element={<DetailsPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

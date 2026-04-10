@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 import {
-    SiCplusplus, SiUnity, SiTypescript, SiUnrealengine, SiPython, SiWebgl, SiReact,
-    SiOpengl, SiNodedotjs, SiNextdotjs, SiBlender, SiVite, SiPostgresql,
-    SiTailwindcss, SiFigma, SiGithub, SiRust
+    SiCplusplus, SiUnity, SiGithub, SiHtml5, SiCss3, SiJavascript, SiCanva
 } from 'react-icons/si';
-import { Zap, Cpu, Rocket, Terminal } from 'lucide-react';
+import { TbBrandCSharp } from 'react-icons/tb';
+import { Zap, Cpu, Rocket } from 'lucide-react';
 import styles from './Skills.module.css';
 
 const skillRows = [
@@ -13,13 +12,13 @@ const skillRows = [
         direction: 1,
         speed: 40,
         items: [
-            { name: "C++", icon: <SiCplusplus /> },
             { name: "Unity", icon: <SiUnity /> },
-            { name: "TypeScript", icon: <SiTypescript /> },
-            { name: "Unreal Engine", icon: <SiUnrealengine /> },
-            { name: "Python", icon: <SiPython /> },
-            { name: "WebGL", icon: <SiWebgl /> },
-            { name: "React", icon: <SiReact /> }
+            { name: "C#", icon: <TbBrandCSharp /> },
+            { name: "C++", icon: <SiCplusplus /> },
+            { name: "JavaScript", icon: <SiJavascript /> },
+            { name: "HTML5", icon: <SiHtml5 /> },
+            { name: "CSS3", icon: <SiCss3 /> },
+            { name: "Game Design", icon: <Zap /> }
         ]
     },
     {
@@ -27,27 +26,13 @@ const skillRows = [
         direction: -1,
         speed: 50,
         items: [
-            { name: "OpenGL", icon: <SiOpengl /> },
-            { name: "Node.js", icon: <SiNodedotjs /> },
-            { name: "Shaders", icon: <Zap /> },
-            { name: "Next.js", icon: <SiNextdotjs /> },
-            { name: "Optimization", icon: <Rocket /> },
-            { name: "System Design", icon: <Cpu /> },
-            { name: "Blender", icon: <SiBlender /> }
-        ]
-    },
-    {
-        id: 3,
-        direction: 1,
-        speed: 45,
-        items: [
-            { name: "PostgreSQL", icon: <SiPostgresql /> },
-            { name: "Tailwind", icon: <SiTailwindcss /> },
-            { name: "Figma", icon: <SiFigma /> },
-            { name: "Vite", icon: <SiVite /> },
-            { name: "Rust", icon: <SiRust /> },
-            { name: "Architecture", icon: <Terminal /> },
-            { name: "GitHub", icon: <SiGithub /> }
+            { name: "AI (NavMesh)", icon: <Cpu /> },
+            { name: "Physics", icon: <Rocket /> },
+            { name: "UI Systems", icon: <Zap /> },
+            { name: "Canva", icon: <SiCanva /> },
+            { name: "Git/GitHub", icon: <SiGithub /> },
+            { name: "Graphic Design", icon: <Rocket /> },
+            { name: "Optimization", icon: <Rocket /> }
         ]
     }
 ];

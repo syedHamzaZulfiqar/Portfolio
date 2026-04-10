@@ -15,8 +15,31 @@
 
 .cardsContainer {
     display: flex;
-    gap: 4rem;
+    gap: 2.5rem;
     padding: 0 5vw;
+    margin-top: 15vh; /* Pushes cards down inside the 100vh flex container */
+    align-items: stretch; /* Make all cards stretch to equal height */
+}
+
+.sectionHeader {
+    position: absolute;
+    top: 8%;
+    left: 5vw;
+    z-index: 10;
+}
+
+.title {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }
 
 .projectCard {
@@ -24,15 +47,31 @@
     border: 1px solid var(--color-border);
     border-radius: 8px;
     overflow: hidden;
-    width: 600px;
+    width: 340px;
     /* Fixed width for horizontal scroll */
     flex-shrink: 0;
     position: relative;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.85; /* slight translucency by default when just sliding */
+}
+
+.cardsContainer:hover .projectCard {
+    opacity: 0.3; /* fade out others heavily when one is hovered */
+    transform: scale(0.95);
+}
+
+.projectCard:hover {
+    border-color: var(--color-primary);
+    opacity: 1 !important; /* bring back to full visibility */
+    transform: scale(1.05) !important; /* pop out */
+    z-index: 5;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .cardImage {
-    height: 300px;
+    height: 180px;
     position: relative;
     overflow: hidden;
 }
@@ -64,7 +103,10 @@
 }
 
 .cardContent {
-    padding: 2.5rem;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .cardHeader {
@@ -97,21 +139,23 @@
 }
 
 .cardTitle {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
     color: var(--color-text-main);
 }
 
 .cardDesc {
     color: var(--color-text-muted);
-    margin-bottom: 2rem;
-    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 .tags {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .tag {

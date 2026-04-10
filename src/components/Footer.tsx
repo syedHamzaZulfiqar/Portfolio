@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
             <div className={`container ${styles.footerContainer}`}>
                 <div className={styles.topSection}>
                     <div className={styles.brand}>
-                        <h3>DEV<span style={{ color: 'var(--color-primary)' }}>PORT</span></h3>
+                        <h3>SYED <span style={{ color: 'var(--color-primary)' }}>HAMZA</span></h3>
                         <p>Building immersive digital experiences and game systems.</p>
                     </div>
 
@@ -23,7 +23,6 @@ const Footer = () => {
                             <h4>Socials</h4>
                             <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
                         </div>
                     </div>
                 </div>
@@ -35,7 +34,6 @@ const Footer = () => {
                     <div className={styles.socialIcons}>
                         <a href="https://github.com" aria-label="Github"><Github size={20} /></a>
                         <a href="https://linkedin.com" aria-label="LinkedIn"><Linkedin size={20} /></a>
-                        <a href="https://twitter.com" aria-label="Twitter"><Twitter size={20} /></a>
                         <a href="mailto:hello@example.com" aria-label="Email"><Mail size={20} /></a>
                     </div>
                 </div>
