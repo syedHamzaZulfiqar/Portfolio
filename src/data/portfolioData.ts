@@ -138,6 +138,22 @@ export const projects: PortfolioItem[] = [
 
 export const experiences: PortfolioItem[] = [
     {
+        id: "mizo-studio-intern",
+        title: "Game Developer Intern",
+        category: "Internship",
+        subtitle: "Mizo Studio • April 2026 – June 2026",
+        shortDescription: "Developed 'Snake Escape' hyper-casual game, optimized simulation mechanics, and built a police chase game.",
+        detailedDescription: [
+            "Developed 'Snake Escape,' a hyper-casual puzzle game where players unscramble and tap snakes to help them escape, focusing on intuitive gameplay and smooth interactions.",
+            "Designed and implemented a custom Level Designer and created over 70 levels stored in JSON format, facilitating rapid content expansion for 'Snake Escape'.",
+            "Contributed to a simulation game for 2-3 weeks, resolving critical physics and collider bugs, updating the UI for better user experience, and performing comprehensive project-wide code cleanup.",
+            "Built an 'RCC Police Chase' game utilizing Realistic Car Controller (RCC) and Enemy RCC AI, while also implementing Cinemachine and Timeline to create cinematic cutscenes."
+        ],
+        thumbnail: "/portfolio-media/pictures/intern work/mizo_thumbnail.png",
+        media: [],
+        tags: ["Unity", "C#", "RCC", "Level Design", "JSON", "Cinemachine", "Timeline"],
+    },
+    {
         id: "airidev-intern",
         title: "3D Game Developer Intern",
         category: "Internship",
