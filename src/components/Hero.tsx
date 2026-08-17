@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import Magnetic from './ui/Magnetic';
+import DBZFight from './DBZFight';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -17,6 +18,7 @@ const Hero = () => {
 
     return (
         <section id="hero" className={styles.hero} ref={ref}>
+            <DBZFight />
             <div className={`container ${styles.heroContainer}`}>
 
                 {/* Left Content */}

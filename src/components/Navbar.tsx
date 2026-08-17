@@ -50,7 +50,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={`container ${styles.navContainer}`}>
                 <a href="#" className={styles.logo}>
-                    ZULFI
+                    <span className={styles.logoText}>ZULFI</span>
                 </a>
 
                 <div className={styles.desktopNav}>

@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { experiences } from '../data/portfolioData';
+import NarutoFight from './NarutoFight';
 import styles from './Experience.module.css';
 
 const Experience = () => {
@@ -16,6 +17,7 @@ const Experience = () => {
 
     return (
         <section id="experience" className={styles.section} ref={sectionRef}>
+            <NarutoFight />
             <div className={`container ${styles.container}`}>
                 <div className={styles.header}>
                     <motion.h2 
